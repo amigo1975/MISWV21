@@ -2,6 +2,7 @@ public class SortingContext {
 	
 	private SortingStrategy strategy;
 	
+	// Aqui se setea la estrategia
 	public void setSortingMethod(SortingStrategy strategy) {
 		this.strategy = strategy;
 	}
@@ -9,7 +10,7 @@ public class SortingContext {
 	public SortingStrategy getStrategy() {
 		return this.strategy;
 	}
-	
+
 	public void sortNumbers(int[] numbers){
 		this.strategy.sort(numbers);
 	}
